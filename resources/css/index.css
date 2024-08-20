@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Phone View */
+body {
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================== */
+/*      HEADER        */
+/* ================== */
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.header-container .wrapper {
+  margin: 22px 10px 20px;
+}
+
+/* ================== */
+/*    Short Bio       */
+/* ================== */
+
+.short-bio {
+  width: 60%;
+  font-size: 0.75rem;
+  align-self: center;
+}
+
+.short-bio div {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: blue;
+  margin-right: 5px;
+}
+
+/* ================== */
+/*       Avatar       */
+/* ================== */
+
+.avatar-frame {
+  width: 30%;
+}
+
+#avatar {
+  width: 100%;
+}
+
+/* ================== */
+/*        MAIN        */
+/* ================== */
+
+main {
+  margin: 20px 0;
+}
+
+section {
+  margin: 20px 0;
+}
+
+/* ================== */
+/*        About       */
+/* ================== */
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  font-size: 0.9rem;
+  text-align: justify;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.section-content p {
+  margin-bottom: 10px;
+}
+
+#last-sentence {
+  margin-bottom: 0;
+}
+
+#tran-hiep-dinh {
+  text-decoration: none;
+  color: blue;
+}
+
+/* ================== */
+/*    Publications    */
+/* ================== */
+
+.paper {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.paper-figure {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.figure {
+  width: 100%;
+}
+
+.paper-info .title, .paper-info .authors, .paper-info .venue {
+  text-align: justify;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.venue {
+  font-style: italic;
+}
+
+.media {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.media a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: blue;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+#lam-thai-nguyen {
+  color: rgb(243, 50, 50);
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) {
+  /* ================== */
+  /*      HEADER        */
+  /* ================== */
+  .header-container {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+
+  .header-container .wrapper {
+    margin: 22px 10px 20px;
+  }
+
+  /* ================== */
+  /*    Short Bio       */
+  /* ================== */
+  .short-bio {
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  /* ================== */
+  /*       Avatar       */
+  /* ================== */
+  #avatar {
+    width: 80%;
+  }
+
+  /* ================== */
+  /*        MAIN        */
+  /* ================== */
+
+  main {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+  
+  /* ================== */
+  /*        About       */
+  /* ================== */
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-content {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+
+  .section-content p {
+    margin-bottom: 15px;
+  }
+
+  /* ================== */
+  /*    Publications    */
+  /* ================== */
+
+  .paper {
+    padding: 10px 30px;
+  }
+
+  .paper-figure {
+    width: 70%;
+  }
+
+  .paper-info .title, .paper-info .authors, .paper-info .venue {
+    font-size: 1.0rem;
+    margin-bottom: 15px;
+  }
+  
+  .media a {
+    font-size: 1.0rem;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1000px) {
+  /* ================== */
+  /*      HEADER        */
+  /* ================== */
+  .header-container {
+    width: 40%;
+  }
+
+  /* ================== */
+  /*    Short Bio       */
+  /* ================== */
+
+  /* ================== */
+  /*       Avatar       */
+  /* ================== */
+  #avatar {
+    width: 80%;
+  }
+
+  /* ================== */
+  /*        MAIN        */
+  /* ================== */
+  main {
+    width: 40%;
+  }
+  
+  /* ================== */
+  /*        About       */
+  /* ================== */
+  .section-content p {
+    margin-bottom: 20px;
+  }
+
+  /* ================== */
+  /*    Publications    */
+  /* ================== */
+  .paper-info .title, .paper-info .authors, .paper-info .venue {
+    margin-bottom: 20px;
+  }
+}
