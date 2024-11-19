@@ -1,0 +1,158 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage[hidelinks]{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Add color to text
+\usepackage{xcolor}
+\definecolor{myred}{RGB}{231, 76, 60}
+\definecolor{mygreen}{RGB}{35, 155, 86}
+\definecolor{myblue}{RGB}{33, 97, 140}
+\newcommand{\colormyname}[1]{\textcolor{myred}{#1}}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\textit{Lam Thai Nguyen}}
+\fancyhead[R]{\textit{\today}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\begin{flushleft}
+\textbf{\LARGE Lam Thai Nguyen}\\[2pt] % Name
+Email: \href{mailto:thainguyen2893@gmail.com}{thainguyen2893@gmail.com} \\
+LinkedIn: \href{https://www.linkedin.com/in/lam-thai-nguyen}{www.linkedin.com/in/lam-thai-nguyen} \\
+GitHub: \href{https://github.com/lam-thai-nguyen}{https://github.com/lam-thai-nguyen}\\
+Homepage: \href{https://lam-thai-nguyen.github.io/}{https://lam-thai-nguyen.github.io/}
+\end{flushleft}
+
+\section*{RESEARCH INTERESTS}
+\noindent
+Computer Vision, Deep Learning, Image Processing
+
+\section*{EDUCATION}
+\noindent
+\textbf{VNU University of Engineering and Technology}, Hanoi, Vietnam \hfill September 2021 | December 2025\\ % University name and location
+B.E., Control Engineering and Automation \hfill Cumulative GPA: 3.43/4.00 \\
+Advisor: \href{https://scholar.google.com/citations?user=fJYX_zsAAAAJ&hl=en&oi=ao}{Tran Hiep Dinh} \\
+% Thesis Title: Ongoing % Additional info
+
+\section*{RESEARCH EXPERIENCE}
+\noindent
+\textbf{HRG | VNU-UET} \hfill Hanoi, Vietnam  \\ % Company name and location
+\textit{Undergraduate Research Assistant} \hfill November 2023 | Present % Position and duration
+
+\vspace{3pt}\noindent
+HRG at VNU-UET is a research group specializing in Signal Processing and Computer Vision. \\ 
+Led by \href{https://scholar.google.com/citations?user=fJYX_zsAAAAJ&hl=en&oi=ao}{Tran Hiep Dinh}.
+
+\begin{itemize}
+    % Job responsibilities and achievements
+    \item Participated in the \textit{University Student Scientific Research Conference}, leading to a third prize at the university level.
+    \item Presented research findings at both the department and university levels, enhancing academic speaking skills.
+    \item Collaborated on interdisciplinary agricultural research, enhancing collaboration skills across different fields.
+    \item Participated in data annotation for segmentation and object detection tasks, ensuring high-quality labeled datasets for model training and evaluation.
+    \item Wrote extensive code for model implementation, data analysis, and results extraction, validating research hypotheses and contributing to project success.
+    \item Authored and co-authored research manuscripts, leading the writing process and ensuring well-documented findings.
+    \item Presented a poster at the \textit{\(3^{rd}\) APSIPA Workshop on Signal and Information Processing in Vietnam}, further improving presentation skills and international exposure.
+\end{itemize}
+
+% % Projects Section
+% \section*{PROJECTS}
+% \noindent
+% \textbf{\# Project Name} \hfill \#City, \#Country\\ % Project name and location
+% \textit{\# Your Position}
+%    \hfill \#Month \#Year | \#Month \#Year % Project link and duration
+
+% \begin{itemize}
+%      \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+% \end{itemize}
+
+\section*{PUBLICATIONS}
+% \noindent
+% \textbf{Journal paper}\\
+% \textup{\# You can use some options here such as: In-Progress, Submitted, reviewed, Published}% Project name and location
+% \begin{itemize}
+%     \item Kahnemann, D., \& Tversky, A. (1979). Prospect theory: A decision making under risk. Econometrica, 47(2), 263-291.
+% \end{itemize}
+
+\noindent
+\textbf{Conference paper}
+\begin{itemize}
+    \item C. H. Le, \colormyname{L. T. Nguyen}, T. K. Pham, L. K. Nguyen, T. H. Dinh, S. Jouannic, H. Adam, P. Duhammel, H. T. Minh, and N. L. Trung, "Structural Analysis of Asian and African Rice Panicles via Transfer Learning", \textit{2024 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)}, accepted.
+\end{itemize}
+
+% \section*{SELECTED COURSES}
+% \begin{itemize}
+%     \item \textbf{Algebra} \hfill Grade: 9.4/10.0 
+%     \item \textbf{Analytics 1} \hfill Grade: 8.8/10.0 
+%     \item \textbf{Computational Methods for Engineering} \hfill Grade: 9.3/10.0 
+%     \item \textbf{Automatic Control Theory} \hfill Grade: 9.4/10.0 
+%     \item \textbf{Measurement Techniques and Sensors} \hfill Grade: 10.0/10.0 
+%     \item \textbf{Artificial Intelligence} \hfill Grade: 8.3/10.0 
+% \end{itemize}
+    
+\section*{AWARDS}
+\textbf{Third Prize, University Student Scientific Research Conference}  \hfill Hanoi, Vietnam\\ 
+Research Title: Architecture Analysis of Rice Panicle using Deep Learning \hfill April 2024
+
+\section*{CERTIFICATIONS}
+\begin{itemize}
+    \item \href{https://certificates.cs50.io/3f3f35e9-bda6-4487-84a3-2d11b3706bba.pdf?size=letter}{CS50: Introduction to Computer Science} \hfill Harvard University
+    \item \href{https://www.credly.com/badges/6dfef240-b0c0-423f-9c94-897d0940c790/public_url}{Deep Learning Specialization} \hfill Coursera
+    \item \href{https://www.coursera.org/account/accomplishments/specialization/N234W2TA9VF3}{Machine Learning Specialization} \hfill Coursera
+    \item \href{https://www.coursera.org/account/accomplishments/certificate/L9TKVLPXS79W}{Computer Vision Basics} \hfill University at Buffalo
+    \item \href{https://www.credly.com/go/GHFkiYLI}{Introduction to Computer Vision and Image Processing} \hfill IBM
+    % \item CS 61A: Structure and Interpretation of Computer Programs \hfill University of California, Berkeley
+    % \item CS 61B: Data Structures \hfill University of California, Berkeley
+    % \item CS 70: Discrete Mathematics and Probability Theory \hfill University of California, Berkeley
+    % \item Algorithms, Part I \hfill Princeton University
+    % \item Algorithms, Part II \hfill Princeton University
+\end{itemize}
+
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C, MATLAB
+    \item \textbf{Framework:} PyTorch, Ultralytics
+    \item \textbf{Software:} VSCode, GitHub, Overleaf
+    \item \textbf{Tool:} LaTeX, Markdown
+    \item \textbf{Soft Skills:} Academic Writing, Academic Speaking, Interdisciplinary Collaboration
+\end{itemize}
+
+\section*{ENGLISH PROFICIENCY}
+\noindent\textbf{IELTS (Academic): 7.0} \hfill Test Date: September 2019\\ 
+Listening: 7.0 | Reading: 7.0 \\
+Speaking: 6.5 | Writing: 7.0 
+
+\section*{REFERENCES}
+\textbf{Prof. Tran Hiep Dinh}\\
+\textit{Assistant Professor, Faculty of Engineering Mechanics and Automation, VNU University of Engineering and Technology, Hanoi, Vietnam}\\
+E-mail: \href{mailto:tranhiep.dinh@vnu.edu.vn}{tranhiep.dinh@vnu.edu.vn}\\
+Scholar Profiles: \href{https://scholar.google.com/citations?user=fJYX_zsAAAAJ&hl=en&oi=ao}{Google Scholar} | \href{https://www.researchgate.net/profile/Tran-Hiep-Dinh}{ResearchGate} | \href{https://www.linkedin.com/in/tran-hiep-dinh/}{LinkedIn}\\ \\
+\textbf{Prof. Stefan Jouannic}\\
+\textit{DIADE, University of Montpellier, IRD, CIRAD, 34394 Montpellier, France}\\
+E-mail: \href{mailto:stephane.jouannic@ird.fr}{stephane.jouannic@ird.fr}\\
+Scholar Profiles: \href{https://scholar.google.com/citations?user=y5kP-ZAAAAAJ&hl=vi}{Google Scholar} | \href{https://www.researchgate.net/profile/Stefan-Jouannic}{ResearchGate}\\ \\
+
+% End document
+\end{document}

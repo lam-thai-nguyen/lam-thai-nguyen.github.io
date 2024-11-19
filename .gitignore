@@ -2,3 +2,8 @@ ref.txt
 resources/images/structural.png
 resources/docs/structural2024-poster.pdf
 resources/docs/structural2024.pdf
+resources/src/*.aux
+resources/src/*.log
+resources/src/*.out
+resources/src/*.synctex.gz
+resources/src/*.pdf
